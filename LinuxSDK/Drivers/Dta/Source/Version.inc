@@ -1,0 +1,8 @@
+#//#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#* Version.inc *#*#*#*#*#*#*#*#*#* (C) 2010-2017 DekTec
+#//
+
+DTA_VERSION_MAJOR = 4
+DTA_VERSION_MINOR = 27
+DTA_VERSION_MICRO = 3
+DTA_VERSION_BUILD = 259
+DTA_VERSION = $(DTA_VERSION_MAJOR).$(DTA_VERSION_MINOR).$(DTA_VERSION_MICRO).$(DTA_VERSION_BUILD)
