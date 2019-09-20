@@ -47,7 +47,7 @@ int  _kbhit()
     FD_SET(STDIN_FILENO, &rdfs);
 
     select(STDIN_FILENO+1, &rdfs, NULL, NULL, &tv);
-    return FD_ISSET(STDIN_FILENO, &rdfs); */
+    return FD_ISSET(STDIN_FILENO, &rdfs); */ return false;
 }
 #endif
 
