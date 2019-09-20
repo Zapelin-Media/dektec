@@ -23,7 +23,7 @@
 #ifndef WINBUILD
 void ChangeTerminalMode(int dir)
 {
-    static struct termios  OldT, NewT;
+/*    static struct termios  OldT, NewT;
 
     if (dir == 1)
     {
@@ -33,11 +33,11 @@ void ChangeTerminalMode(int dir)
         tcsetattr(STDIN_FILENO, TCSANOW, &NewT);
     } else {
         tcsetattr(STDIN_FILENO, TCSANOW, &OldT);
-    }
+    } */
 }
 int  _kbhit()
 {
-    struct timeval  tv;
+/*    struct timeval  tv;
     fd_set  rdfs;
 
     tv.tv_sec = 0;
@@ -47,7 +47,7 @@ int  _kbhit()
     FD_SET(STDIN_FILENO, &rdfs);
 
     select(STDIN_FILENO+1, &rdfs, NULL, NULL, &tv);
-    return FD_ISSET(STDIN_FILENO, &rdfs);
+    return FD_ISSET(STDIN_FILENO, &rdfs); */
 }
 #endif
 
@@ -1781,7 +1781,7 @@ void Player::LoopFile()
             if ( dr != DTAPI_OK )
                 throw Exc(c_ErrFailWrite, ::DtapiResult2Str(dr));
         }
-        if (TxStarted)
+/*        if (TxStarted)
         {
             int  StatusFlags, Latched;
             dr = m_DtOutp.GetFlags(StatusFlags, Latched);
@@ -1793,7 +1793,7 @@ void Player::LoopFile()
                 throw Exc(c_ErrDmaUnderflow);
             if ((Latched & DTAPI_TX_FIFO_UFL) != 0)
                 throw Exc(c_ErrFifoUnderflow);
-        }
+        } */
 
 
         // We wait with starting actual transmission until we have build up a minimum FIFO
