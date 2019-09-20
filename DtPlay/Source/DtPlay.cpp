@@ -1259,9 +1259,9 @@ void Player::DisplayPlayInfo()
         LogF("- Num Tp per IP         : %d", m_CmdLineParams.m_IpPars.m_NumTpPerIp );
     }
 
-    Log("");
+/*    Log("");
     Log("Press any key to stop playing");
-    Log("");
+    Log(""); */
 }
 
 //.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- Player::InitIsdbtPars -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
